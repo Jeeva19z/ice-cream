@@ -1,0 +1,192 @@
+body{
+    margin: 0 3%;
+    font-family: 'Calibri Light', Calibri, sans-serif;}
+*{
+    box-sizing: border-box;
+}
+header{
+display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header>h2{
+    color: rgb(169, 14, 14);
+    text-decoration: none;
+
+}
+.bar>div{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+    width: 25px;
+
+    
+}
+.bar{
+    display: none;
+}
+header>ul{
+    list-style-type: none;
+    display: flex;
+}
+ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+header>ul>li{
+    padding-right:20px ;
+}
+.banner>img{
+    width: 100%;
+
+}
+.whst-is-lorem{
+    margin: 15px 0 0 5px;
+    
+}
+.whst-is-lorem>h2{
+    display: inline;
+    padding-left:10px ;
+    color: rgb(44, 4, 130);
+
+}
+.whst-is-lorem>img{
+    height:20px;
+    
+}
+.icecrem-bowl>img{
+    border: 5px solid blue;
+   
+}
+.icecrem-bowl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.jar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.jar>p{
+    text-align: center;
+    margin: 0;
+}
+
+.jar>h2{
+  color: rgb(169, 14, 14);
+}
+.jar>img{
+    height: 400px;
+    border: 3px solid #9f9fee;
+    
+}
+.lorem-with-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lorem-with-img>img{
+    padding: 30px;
+    width: 300px;
+    height: 150px;
+}
+
+.para-lorem>h2{
+  color: rgb(169, 14, 14);
+
+}
+img[alt=jar-ice]{
+  
+   
+   height: 300px;
+}
+.para-lorem>ul>li{
+   margin-top: 10px;
+}
+.line{
+    border: 2px solid brown;
+    
+}
+footer>p{
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+}
+.link>a{
+    text-decoration: none;
+    margin: 10px;
+    color: black;   
+}
+.link{
+ 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:767px){
+   
+    header>ul {
+        list-style-type: none;
+        display: none;
+    }
+    .icecrem-bowl{
+        display:block
+    }
+    .lorem-with-img {
+        display:flex; 
+      flex-direction:column-reverse;
+    }
+    img[alt="carring"]{
+        width: 100%;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    header>h2,.banner ,.whst-is-lorem , .icecrem-bowl , .whst-is-lorem , .para-lorem , footer {
+        margin: 3%;
+    }
+    header>h2{
+        margin-left: 20px;
+    }
+    .lorem-with-img>img {
+        width:100%;
+        margin:0;
+        padding:0;
+    }
+    .line{
+        margin: 10px 0;
+        width: 100%;
+        
+    }
+    footer>p {
+        font-size: 15px;
+        margin: 2px 0;
+    }
+   .link>a{
+    font-size: 12px;
+    font-weight: 900;
+   }
+   .link{
+    margin-top: 10px;
+   }
+   .jar>img{
+    height: auto;
+    width: 100%;
+    margin-top: 15px;
+   }
+   .bar{
+    display: block;
+    margin-right: 10px;
+}
+
+}
